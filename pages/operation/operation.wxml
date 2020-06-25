@@ -1,0 +1,18 @@
+<!--pages/operation/operation.wxml-->
+<!--pages/operation/operation.wxml-->
+<view class='container'>
+  <form bindsubmit='formSubmit' bindreset='formRest'>
+    <view class='row'>
+      <text>Name：</text>
+      <input type='text' name="areaName" placeholder='Please enter name' value='{{areaName}}'/>
+    </view>
+    <view class='row'>
+      <text>Priority：</text>
+      <input type='number' name="priority" placeholder='greater the value, higher priority' value='{{priority}}' />
+    </view>
+    <view class='row'>
+      <button type='primary' form-type='submit'>Submit</button>
+      <button type='primary' form-type='reset'>Clear</button>
+    </view>
+  </form>
+</view>
